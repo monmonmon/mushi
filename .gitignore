@@ -1,0 +1,16 @@
+/.bundle
+/log/*
+!/log/.keep
+/tmp
+
+/.sass-cache
+/.envrc
+/.ruby-version
+.DS_Store
+.#*
+*.swp
+*.dump
+.rbenv-vars
+.vimrc.local
+/public/uploads
+/vendor/bundle
