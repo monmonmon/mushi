@@ -3,12 +3,12 @@ body {	color:#666;	font:300 15px/15px Roboto,Arial,Helvetica;background-color:#f
 a{color:#00a9c6; text-decoration:none;}
 a:hover{color:#666;}
 .btn,a,.btn:hover,a:hover {
--webkit-transition: all 0.3s ease-in-out;
--moz-transition: all 0.3s ease-in-out;
--ms-transition: all 0.3s ease-in-out;
--o-transition: all 0.3s ease-in-out;
-transition: all 0.3s ease-in-out;
-outline: none !important;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	outline: none !important;
 }
 
 h1,h2,h3,h4{margin: 0;line-height: 1em;}
@@ -29,7 +29,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 .btn-primary{color: #fff;background:#00a9c6;width: 100%;outline: none;}
 .btn-primary:hover,.btn-primary:active,.btn-primary:focus{background:#1BC0DC;box-shadow: none;}
 
-.topbar {background:url(../images/lines.png);	height:5px;position: fixed;top: 0;width: 100%;z-index: 1000;}
+.topbar {background:url(<%= asset_path 'lines.png' %>);	height:5px;position: fixed;top: 0;width: 100%;z-index: 1000;}
 .navbar-nav > li > a{font-size: 1em;line-height: 3.6em;}
 .navbar-fixed-top{top: 5px;}
 .navbar-inverse{background: #111;}
@@ -77,7 +77,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 .team a i.fa:hover{color: #21abca;}
 
 
-.highlight-info{ background:url(../images/lab.jpg) center fixed; background-size: cover; color:#fff;}
+.highlight-info{ background:url(<%= asset_path 'lab.jpg' %>) center fixed; background-size: cover; color:#fff;}
 .highlight-info .overlay{background: rgba(33,171,202,0.5);}
 .highlight-info h4{color: #fff;margin:0.5em 0 0 0;}
 /*about us*/
@@ -107,7 +107,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 	body{font:300 13px/13px Roboto,Arial,Helvetica;}
 	.navbar-brand{padding-top: 11px;}
 	.process ul li{margin:0 0.5em; }
-	
+
 	.grid figure h2{font: 700 1.5em Roboto,Arial,Helvetica;}
 	figure.effect-oscar figcaption{padding: 12%;}
 	figure.effect-oscar figcaption::before,figure.effect-chico figcaption::before{top: 20px;right: 20px;bottom: 20px;left: 20px;}
