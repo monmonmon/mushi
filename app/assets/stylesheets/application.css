@@ -14,6 +14,7 @@
  *= require animate
  *= require set
  *= require blueimp-gallery.min
+ *= require spacing
  *= require_tree .
  *= require_self
  */
