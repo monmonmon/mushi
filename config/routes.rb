@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     get 'hoe'
     get 'about'
     get 'contact'
+    get 'team'
   end
 
   root 'welcome#index'
