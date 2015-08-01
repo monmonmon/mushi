@@ -1,4 +1,6 @@
 class WelcomeController < ApplicationController
+  before_action :full_screen_width, only: %w(index)
+
   def index
   end
 

@@ -14,5 +14,5 @@
 .vimrc.local
 /public/uploads
 /vendor/bundle
-/app/app
+/app/t
 /db/*.sqlite3
