@@ -32,6 +32,15 @@ group :development do
   gem 'reek'
 end
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-jquery-ui'
+  gem 'rails-assets-underscore'
+  gem 'rails-assets-underscore.string'
+  gem 'rails-assets-bootstrap'
+  gem 'rails-assets-angular'
+  gem 'rails-assets-leaflet'
+end
+
 gem 'rails_12factor', group: :production
 gem 'pg'
 gem 'sass-rails', '~> 5.0'
@@ -44,7 +53,6 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'utf8-cleaner'
 gem 'annotate'
-gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
 gem 'seed-fu'
 gem 'ransack'
@@ -55,12 +63,7 @@ gem 'exception_notification'
 gem "ruby-prof"
 gem 'rack-mini-profiler'
 gem 'simple_form'
-
-source 'https://rails-assets.org' do
-  gem 'rails-assets-jquery-ui'
-  gem 'rails-assets-underscore'
-  gem 'rails-assets-underscore.string'
-  gem 'rails-assets-bootstrap'
-  gem 'rails-assets-angular'
-  gem 'rails-assets-leaflet'
-end
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
