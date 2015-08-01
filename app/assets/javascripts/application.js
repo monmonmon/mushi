@@ -16,4 +16,8 @@
 //= require underscore.string
 //= require bootstrap
 //= require angular
+//= require wow.min
+//= require touchSwipe.min
+//= require respond
+//= require jquery.blueimp-gallery.min
 //= require_tree .
