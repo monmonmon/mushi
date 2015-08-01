@@ -3,6 +3,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable,
          :confirmable, :omniauthable
 
-  validates :username, presence: true, uniqueness: true
-  validates :email_address, presence: true, uniqueness: true, email: true
+  validates :username, presence: true, uniqueness: true, username: true
+  validates :email, presence: true, uniqueness: true, email: true
 end
