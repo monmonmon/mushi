@@ -5,7 +5,7 @@
 		<figcaption>
 			<h2>Nature</h2>
 			<p>Lily likes to play with crayons and pencils<br>
-				<a href="images/portfolio/mushi001.jpg" title="1" data-gallery>View more</a></p>
+				<a href="<%= asset_path 'portfolio/mushi001.jpg' %>" title="1" data-gallery>View more</a></p>
 		</figcaption>
 	</figure>
 	<figure class="effect-oscar wowload fadeInUp">
@@ -13,7 +13,7 @@
 		<figcaption>
 			<h2>Events</h2>
 			<p>Lily likes to play with crayons and pencils<br>
-				<a href="images/portfolio/mushi002.jpg" title="1" data-gallery>View more</a></p>
+				<a href="<%= asset_path 'portfolio/mushi002.jpg' %>" title="1" data-gallery>View more</a></p>
 		</figcaption>
 	</figure>
 	<figure class="effect-oscar wowload fadeInUp">
@@ -21,7 +21,7 @@
 		<figcaption>
 			<h2>music</h2>
 			<p>Lily likes to play with crayons and pencils<br>
-				<a href="images/portfolio/mushi003.jpg" title="1" data-gallery>View more</a></p>
+				<a href="<%= asset_path 'portfolio/mushi003.jpg' %>" title="1" data-gallery>View more</a></p>
 		</figcaption>
 	</figure>
 	<figure class="effect-oscar wowload fadeInUp">
@@ -29,7 +29,7 @@
 		<figcaption>
 			<h2>Vintage</h2>
 			<p>Lily likes to play with crayons and pencils<br>
-				<a href="images/portfolio/mushi004.jpg" title="1" data-gallery>View more</a></p>
+				<a href="<%= asset_path 'portfolio/mushi004.jpg' %>" title="1" data-gallery>View more</a></p>
 		</figcaption>
 	</figure>
 	<figure class="effect-oscar wowload fadeInUp">
@@ -37,7 +37,7 @@
 		<figcaption>
 			<h2>Typers</h2>
 			<p>Lily likes to play with crayons and pencils<br>
-				<a href="images/portfolio/mushi005.jpg" title="1" data-gallery>View more</a></p>
+				<a href="<%= asset_path 'portfolio/mushi005.jpg' %>" title="1" data-gallery>View more</a></p>
 		</figcaption>
 	</figure>
 
@@ -46,7 +46,7 @@
 		<figcaption>
 			<h2>hotel</h2>
 			<p>Lily likes to play with crayons and pencils<br>
-				<a href="images/portfolio/mushi006.jpg" title="1" data-gallery>View more</a></p>
+				<a href="<%= asset_path 'portfolio/mushi006.jpg' %>" title="1" data-gallery>View more</a></p>
 		</figcaption>
 	</figure>
 	<figure class="effect-oscar wowload fadeInUp">
@@ -54,7 +54,7 @@
 		<figcaption>
 			<h2>Chinese</h2>
 			<p>Lily likes to play with crayons and pencils<br>
-				<a href="images/portfolio/mushi007.jpg" title="1" data-gallery>View more</a></p>
+				<a href="<%= asset_path 'portfolio/mushi007.jpg' %>" title="1" data-gallery>View more</a></p>
 		</figcaption>
 	</figure>
 	<figure class="effect-oscar wowload fadeInUp">
@@ -62,7 +62,7 @@
 		<figcaption>
 			<h2>Dicrap</h2>
 			<p>Lily likes to play with crayons and pencils<br>
-				<a href="images/portfolio/8.jpg" title="1" data-gallery>View more</a></p>
+				<a href="<%= asset_path 'portfolio/mushi008.jpg' %>" title="1" data-gallery>View more</a></p>
 		</figcaption>
 	</figure>
 	<figure class="effect-oscar wowload fadeInUp">
@@ -70,7 +70,7 @@
 		<figcaption>
 			<h2>Coffee</h2>
 			<p>Lily likes to play with crayons and pencils<br>
-				<a href="images/portfolio/9.jpg" title="1" data-gallery>View more</a></p>
+				<a href="<%= asset_path 'portfolio/mushi009.jpg' %>" title="1" data-gallery>View more</a></p>
 		</figcaption>
 	</figure>
 	<figure class="effect-oscar wowload fadeInUp">
@@ -78,7 +78,7 @@
 		<figcaption>
 			<h2>cameras</h2>
 			<p>Lily likes to play with crayons and pencils<br>
-				<a href="images/portfolio/10.jpg" title="1" data-gallery>View more</a></p>
+				<a href="<%= asset_path 'portfolio/mushi010.jpg' %>" title="1" data-gallery>View more</a></p>
 		</figcaption>
 	</figure>
 	<figure class="effect-oscar wowload fadeInUp">
@@ -86,7 +86,7 @@
 		<figcaption>
 			<h2>design</h2>
 			<p>Lily likes to play with crayons and pencils<br>
-				<a href="images/portfolio/11.jpg" title="1" data-gallery>View more</a></p>
+				<a href="<%= asset_path 'portfolio/mushi011.jpg' %>" title="1" data-gallery>View more</a></p>
 		</figcaption>
 	</figure>
 	<figure class="effect-oscar wowload fadeInUp">
@@ -94,7 +94,7 @@
 		<figcaption>
 			<h2>studio</h2>
 			<p>Lily likes to play with crayons and pencils<br>
-				<a href="images/portfolio/12.jpg" title="1" data-gallery>View more</a></p>
+				<a href="<%= asset_path 'portfolio/mushi012.jpg' %>" title="1" data-gallery>View more</a></p>
 		</figcaption>
 	</figure>
 </div>
@@ -177,21 +177,27 @@
 			<div id="carousel-testimonials" class="carousel slide testimonails  wowload fadeInRight" data-ride="carousel">
 				<div class="carousel-inner">
 					<div class="item active animated bounceInRight row">
-						<div class="animated slideInLeft col-xs-2"><img alt="portfolio" src="images/team/1.jpg" width="100" class="img-circle img-responsive"></div>
+						<div class="animated slideInLeft col-xs-2">
+							<%= image_tag 'team/1.jpg', alt: 'portfolio', width: 100, class: 'img-circle img-responsive' %>
+						</div>
 						<div  class="col-xs-10">
 							<p> I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
 							<span>Angel Smith - <b>eshop Canada</b></span>
 						</div>
 					</div>
 					<div class="item  animated bounceInRight row">
-						<div class="animated slideInLeft col-xs-2"><img alt="portfolio" src="images/team/2.jpg" width="100" class="img-circle img-responsive"></div>
+						<div class="animated slideInLeft col-xs-2">
+							<%= image_tag 'team/2.jpg', alt: 'portfolio', width: 100, class: 'img-circle img-responsive' %>
+						</div>
 						<div  class="col-xs-10">
 							<p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
 							<span>John Partic - <b>Crazy Pixel</b></span>
 						</div>
 					</div>
 					<div class="item  animated bounceInRight row">
-						<div class="animated slideInLeft  col-xs-2"><img alt="portfolio" src="images/team/3.jpg" width="100" class="img-circle img-responsive"></div>
+						<div class="animated slideInLeft  col-xs-2">
+							<%= image_tag 'team/3.jpg', alt: 'portfolio', width: 100, class: 'img-circle img-responsive' %>
+						</div>
 						<div  class="col-xs-10">
 							<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue.</p>
 							<span>Harris David - <b>Jet London</b></span>
