@@ -57,7 +57,6 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'seed-fu'
 gem 'ransack'
 gem 'draper'
-gem 'foreigner'
 gem 'kaminari'
 gem 'exception_notification'
 gem "ruby-prof"

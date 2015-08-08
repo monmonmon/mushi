@@ -11,5 +11,7 @@ Rails.application.routes.draw do
     get 'team'
   end
 
+  resources :bugs
+
   root 'welcome#index'
 end

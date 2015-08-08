@@ -56,5 +56,7 @@ module Mushi
       user_name: ENV['GMAIL_ADDRESS'],
       password: ENV['GMAIL_PASSWORD'],
     }
+
+    config.app_generators.scaffold_controller = :scaffold_controller
   end
 end

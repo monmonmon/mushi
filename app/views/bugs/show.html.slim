@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Bug:
+  = @bug.bug
+p
+  strong Name:
+  = @bug.name
+p
+  strong Keyname:
+  = @bug.keyname
+
+= link_to 'Edit', edit_bug_path(@bug)
+'|
+= link_to 'Back', bugs_path
