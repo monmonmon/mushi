@@ -51,12 +51,10 @@ class BugsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_bug
       @bug = Bug.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def bug_params
       params.require(:bug).permit(:bug_id, :name)
     end

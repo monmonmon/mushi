@@ -13,5 +13,7 @@ Rails.application.routes.draw do
 
   resources :bugs
 
+  resources :posts
+
   root 'welcome#index'
 end
