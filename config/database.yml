@@ -1,15 +1,19 @@
 default: &default
-  adapter: sqlite3
+  adapter: postgresql
   pool: 5
   encoding: unicode
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  #adapter: sqlite3
+  #database: db/development.sqlite3
+  database: mushi
 
 test:
   <<: *default
-  database: db/test.sqlite3
+  #adapter: sqlite3
+  #database: db/test.sqlite3
+  database: mushi_test
 
 production:
   <<: *default

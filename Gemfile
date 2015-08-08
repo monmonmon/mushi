@@ -33,10 +33,6 @@ group :development do
   gem 'reek'
 end
 
-group :production do
-  gem 'pg'
-end
-
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery-ui'
   gem 'rails-assets-underscore'
@@ -46,7 +42,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-leaflet'
 end
 
-gem 'sqlite3'
+gem 'pg'
 gem 'rails_12factor', group: :production
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
