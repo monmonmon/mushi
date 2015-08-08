@@ -16,3 +16,4 @@
 /vendor/bundle
 /app/t
 /db/*.sqlite3
+/config/application.yml
