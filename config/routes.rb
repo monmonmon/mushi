@@ -14,6 +14,10 @@ Rails.application.routes.draw do
       to: "devise/omniauth_callbacks#:action",
       as: :omniauth_callback,
       via: [:get, :post]
+    devise_scope :user do
+      get 'users/logout' => 'devise/sessions#destroy'
+      get 'logout' => 'devise/sessions#destroy'
+    end
 
     controller :welcome do
       get 'hoe'
