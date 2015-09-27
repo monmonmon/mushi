@@ -1,0 +1,24 @@
+footer#footer
+  .container
+    .row
+      .col-sm-4
+        .footer-item
+          h3 = t('application.about_this_service')
+          p = t('application.motto')
+      .col-sm-4
+        h3 = t('application.about_us')
+        p
+          = t('application.staff.monmon')
+          br
+          = t('application.staff.abecchi')
+          br
+      .col-sm-4
+        .footer-item
+          h3 = t('application.social_networks')
+          /ul.footer-links
+            li = render 'application/twitter_button'
+            li = render 'application/facebook_like_button'
+            li = render 'application/google_plus_button'
+    div
+      p.copyright
+        = t('application.powered_by')

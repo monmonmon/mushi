@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title
+      | Known Issues
+    link[rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"]
+    = stylesheet_link_tag    'application', media: 'all'
+    = yield :css
+    = javascript_include_tag 'application'
+    = yield :js
+    = csrf_meta_tags
+  body
+    = render 'header'
+    - if @full_screen_width
+      = yield
+    - else
+      .container
+        - if false
+          - if alert
+            .alert.alert-danger.alert-dismissible[role="alert"]
+              button.close[type="button" data-dismiss="alert" aria-label="Close"]
+                span[aria-hidden="true"]
+                  | ×
+              = alert
+          - elsif notice
+            .alert.alert-success.alert-dismissible[role="alert"]
+              button.close[type="button" data-dismiss="alert" aria-label="Close"]
+                span[aria-hidden="true"]
+                  | ×
+              = notice
+        = yield
+    = render 'footer'
