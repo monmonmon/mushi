@@ -31,6 +31,7 @@ group :development do
   gem 'brakeman'
   gem 'rubocop'
   gem 'reek'
+  gem 'letter_opener_web', '~> 1.2.0'
 end
 
 source 'https://rails-assets.org' do
@@ -69,3 +70,7 @@ gem 'omniauth-twitter'
 gem 'powder'
 gem 'figaro'
 gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'master'
+gem 'guard-pow'
+gem 'aws-sdk'
+gem 'paperclip'
+gem 's3_direct_upload'

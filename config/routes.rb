@@ -19,6 +19,10 @@ Rails.application.routes.draw do
       get 'logout' => 'devise/sessions#destroy'
     end
 
+    if Rails.env.development?
+      mount LetterOpenerWeb::Engine, at: '/letter_opener'
+    end
+
     controller :welcome do
       get 'hoe'
       get 'about'
