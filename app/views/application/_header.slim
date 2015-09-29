@@ -21,7 +21,8 @@ nav.navbar.navbar-default.navbar-static-top
               = text_field_tag :search, nil, class: 'form-control form-autocomplete search', value: params[:search], placeholder: 'Search'
               span.input-group-btn
                 = button_tag type: :submit, class: 'btn btn-default' do
-                  span.fa.fa-search.mrs[aria-hidden="true"]
+                  i.fa.fa-search.mrs[aria-hidden="true"]
+                  | Search
         - if user_signed_in?
           li.dropdown
             a.dropdown-toggle[href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"]
@@ -32,11 +33,11 @@ nav.navbar.navbar-default.navbar-static-top
               li = link_to t('application.my_reviews'), root_path
               li = link_to t('application.edit_user'), root_path
               li
-                = link_to root_path, method: :delete do
+                = link_to destroy_user_session_path, method: :delete do
                   span.fa.fa-sign-out.mrs[aria-hidden="true"]
                   = t('application.logout')
         - else
           li
-            = link_to root_path do
+            = link_to user_session_path do
               span.fa.fa-sign-in.mrs[aria-hidden="true"]
               = t('application.login')
